@@ -3,10 +3,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import logo from '../public/images/logo.png'
 import style from './index.module.css'
+import Upload from '../src/custom-components/upload'
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className={style.full}>
       <Head>
         <title>Cisumusic</title>
         <link rel="icon" href="/images/hlogo.png" />
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
         />
         </div>
         
+        <Upload/>
       </div>
 
       <footer className={style.footer}>
