@@ -31,9 +31,9 @@ const AntdUpload: React.FC = () => (
       <InboxOutlined />
     </p>
     <p className="ant-upload-text">Click or drag file to this area to upload</p>
-    <p className="ant-upload-hint">
+    <p className="ant-upload-hint" style={{marginLeft:"20px", marginRight:"20px", marginBottom:"10px"}}>
       Support for a single or bulk upload. Strictly prohibit from uploading company data or other
-      band files
+      band files.
     </p>
   </Dragger>
 );
