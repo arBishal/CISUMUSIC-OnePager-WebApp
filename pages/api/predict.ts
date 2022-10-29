@@ -16,9 +16,9 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  const audioUrl: string = "/Users/magic-kiri/Desktop/blues.00000.wav";
-
-  var str = "meow";
+  const audioUrl: string = "/Users/magic-kiri/Desktop/pop.00000.wav";
+  
+  // const audioUrl: string = req.body.audioUrl;
   let output: unknown;
   const python = spawn("/Users/magic-kiri/Desktop/Codes/CISUMUSIC/CISUMUSIC-OnePager-WebApp/.pyvenv/bin/python3", ["/Users/magic-kiri/Desktop/Codes/CISUMUSIC/CISUMUSIC-OnePager-WebApp/pyscripts/scripts.py", audioUrl]);
   python.stdout.on("data", (data: any) => {

@@ -52,7 +52,7 @@ features.append(harmonic.mean())
 features.append(harmonic.var())
 
 #perceptr
-features = features + [1000, 1000, 1000]
+features = features + [0, 0, 0]
 #tempo
 
 #mfcc how to access them?
@@ -69,20 +69,14 @@ for i in range(1,21):
 
 
 features = np.array([features], dtype=float)
-print(features)
+# print(features)
 print(features.shape)
 features = StandardScaler().fit_transform(features)
 
 
 
 
-# print(text.__version__)
-# path = os.path.dirname(__file__)
-# print(path)
 model = tf.keras.models.load_model('/Users/magic-kiri/Desktop/Codes/CISUMUSIC/CISUMUSIC-OnePager-WebApp/pyscripts/genre_classification.h5')
-# model = tf.keras.models.load_model(path+'/.model')
-# model.summary()
-
 
 classes = ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
 
@@ -94,4 +88,4 @@ def classify(model, input):
 
     return output
 
-print(classify(model, features))
+# print(classify(model, features))
