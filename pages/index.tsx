@@ -35,9 +35,9 @@ const Home: NextPage = () => {
             width="336.6vh"
           />
         </div>
-        <p>Upload a piece of music to find out the genre. Enjoy!</p>
+        <p style={{fontSize: "20px"}}>Upload a piece of music to find out the genre. Enjoy!</p>
         <Upload setFile={setFile} />
-        <Button type="primary" style={{ margin: "20px" }} onClick={onClick}>
+        <Button type="primary" style={{ margin: "20px", fontSize: "20px", padding: "16px", height:"60px" }} onClick={onClick}>
           Find the genre!
         </Button>
       </div>
