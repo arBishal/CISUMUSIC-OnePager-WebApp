@@ -1,4 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## About the Project
+
+This is a Music Genre Classifier. Upload a piece of music to know its genre.
+
+### Technologies
+
+We've used Next.js for the frontend. And there is python, obviously, for the model.
+
+### Visual
+![image](https://github.com/arBishal/CISUMUSIC-OnePager-WebApp/assets/48941190/2963c75e-45b5-4913-bde2-4ab0cc82325f)
+
 
 ## Getting Started
 
